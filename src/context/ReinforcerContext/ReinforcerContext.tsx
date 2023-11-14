@@ -54,6 +54,11 @@ const reinforcerReducer = (reinforcerOptions: ReinforcerOptions, action: Reinfor
         case ReinforcerReducerActionTypes.UploadImageAnnotation: {
             const apiKey = reinforcerOptions.apiKey
             const roboflowRestApi = new RoboflowRestApi(apiKey)
+            roboflowRestApi.client.interceptors.request.use((config) => {
+                config.headers = config.headers || {}
+                config.headers["Access-Control-Allow-Credentials"] = "true"
+                return config
+            })
             const projectId = reinforcerOptions.projectId
             const imageName = action.value.imageName
             const imageBlob = action.value.imageBlob
