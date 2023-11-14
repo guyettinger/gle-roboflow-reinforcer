@@ -1,2 +1,2 @@
-export { type CoinCounterSummaryProps } from './ReinforcerSummary.types'
+export { type ReinforcerCamSummaryProps } from './ReinforcerSummary.types'
 export { ReinforcerSummary } from './ReinforcerSummary'
