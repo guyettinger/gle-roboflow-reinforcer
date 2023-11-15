@@ -1,7 +1,7 @@
 {
   "name": "gle-roboflow-reinforcer",
   "description": "An app for reinforcing Roboflow annotations",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,7 +12,7 @@
   "dependencies": {
     "gle-components": "^1.0.3",
     "gle-roboflow-components": "^1.0.6",
-    "gle-roboflow-rest-client": "^1.0.3",
+    "gle-roboflow-rest-client": "^1.0.4",
     "gle-pascal-voc": "^1.0.2",
     "next": "latest",
     "react": "latest",
